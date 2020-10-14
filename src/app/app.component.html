@@ -1,0 +1,31 @@
+<h1 align = center> {{title}} </h1> 
+<table align = center>
+
+<th colspan = 1> Expression:
+    <input type = "text" [formControl]="expression" placeholder= "Expression to evaluate"/>
+    <button (click)= "evaluate()"> = </button> 
+<tr> 
+    <button (click)= "updateExpression('1')"> 1 </button>
+    <button (click)= "updateExpression('2')"> 2 </button>
+    <button (click)= "updateExpression('3')"> 3 </button>
+    <button (click)= "appendOperator('+')"> + </button>
+</tr>
+<tr>
+    <button (click)= "updateExpression('4')"> 4 </button>
+    <button (click)= "updateExpression('5')"> 5 </button>
+    <button (click)= "updateExpression('6')"> 6 </button>
+    <button (click)= "appendOperator('-')"> - </button>
+</tr>
+<tr>
+    <button (click)= "updateExpression('7')"> 7 </button>
+    <button (click)= "updateExpression('8')"> 8 </button>
+    <button (click)= "updateExpression('9')"> 9 </button> 
+    <button (click)= "appendOperator('*')"> x </button>
+</tr>
+<tr>    
+    <button (click)= "appendZero('0')"> 0 </button>    
+    <button (click)= "clearbtn()">Clear</button>
+    <button (click)= "backspace()">Erase</button>
+    <button (click)= "appendOperator('/')"> / </button>
+</tr>
+</table>
